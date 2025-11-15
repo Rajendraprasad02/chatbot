@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chat Widget Test</title>
+  </head>
+  <body>
+    <div id="chat-widget"></div>
+
+    <!-- Load React & ReactDOM from CDN -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Load your built widget -->
+    <script src="./dist/widget/chat-widget.umd.cjs"></script>
+
+    <!-- Initialize it -->
+    <script>
+      window.renderChatWidget("#chat-widget");
+    </script>
+  </body>
+</html>
